@@ -95,6 +95,14 @@
                            placeholder="Label text"
                            v-model="listItem.text">
                 </div>
+
+                <div :class="styles.FORM.FORM_GROUP">
+                    <label>Show Section</label>
+                    <select :class="styles.FORM.FORM_CONTROL" v-model="listItem.section">
+                      <option selected disabled>Select Section</option>
+                      <option>Test Section</option>
+                    </select>
+                </div>
             </div>
 
         </div>
